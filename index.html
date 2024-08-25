@@ -36,8 +36,8 @@
     </script>
     <style type="text/tailwindcss">
       @layer utilities {
-        .heading{
-        @apply  text-center font-semibold text-3xl
+        .heading {
+          @apply text-center font-semibold text-3xl;
         }
       }
     </style>
@@ -67,20 +67,20 @@
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-              <li><a href="">Home</a></li>
-              <li><a href="">Shop</a></li>
-              <li><a href="">News</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#shop">Shop</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
           <a class="btn btn-ghost text-3xl font-bold">Bike Dekho</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a href="">Home</a></li>
-            <li><a href="">Shop</a></li>
-            <li><a href="">News</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="">
@@ -88,8 +88,8 @@
         </div>
       </div>
     </header>
-    <main class="container mx-auto">
-      <div class="carousel w-full">
+    <main  class="container mx-auto">
+      <div id="home" class="carousel w-full">
         <div
           id="slide1"
           class="carousel-item relative w-full bg-orange-100 rounded-xl"
@@ -220,7 +220,7 @@
       </div>
 
       <!-- fetured Bikes -->
-      <section class="my-20">
+      <section id="shop" class="my-20">
         <h2 class="text-center font-semibold text-3xl">
           Fetured Bikes In This Year
         </h2>
@@ -248,121 +248,216 @@
 
       <!-- latest news  -->
 
-      <section class="py-16">
+      <section id="news" class="py-16">
         <h2 class="heading">Latest News</h2>
-        
-        <div class="grid mt-9 grid-cols-1 md:grid-cols-2 lg:grid-col-3 gap-10">
 
-          <div class="card bg-base-100 w-96 shadow-xl">
+        <div class="grid mt-9 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div class="card bg-base-100 shadow-xl">
             <div class="w-full p-5 overflow-hidden">
               <img
-              class="w-full h-auto"
+                class="w-full h-auto"
                 src="images/others/latest1.png"
-                alt="" />
+                alt=""
+              />
             </div>
             <div class="card-body pt-2">
               <h2 class="card-title">Ducati XDIAVEL S-73</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
               <div class="card-actions justify-start mt-2">
-                <button class="btn btn-primary bg-transparent border-orange-500 text-orange-500 hover:text-white hover:bg-orange-500 hover:border-orange-500">Read More</button>
+                <button
+                  class="btn btn-primary bg-transparent border-orange-500 text-orange-500 hover:text-white hover:bg-orange-500 hover:border-orange-500"
+                >
+                  Read More
+                </button>
               </div>
             </div>
           </div>
-          <div class="card bg-base-100 w-96 shadow-xl">
+          <div class="card bg-base-100  shadow-xl">
             <div class="w-full p-5 overflow-hidden">
               <img
-              class="w-full h-auto"
+                class="w-full h-auto"
                 src="images/others/latest2.png"
-                alt="" />
+                alt=""
+              />
             </div>
             <div class="card-body pt-2">
               <h2 class="card-title">Ducati XDIAVEL S-73</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
               <div class="card-actions justify-start mt-2">
-                <button class="btn btn-primary bg-transparent border-orange-500 text-orange-500 hover:text-white hover:bg-orange-500 hover:border-orange-500">Read More</button>
+                <button
+                  class="btn btn-primary bg-transparent border-orange-500 text-orange-500 hover:text-white hover:bg-orange-500 hover:border-orange-500"
+                >
+                  Read More
+                </button>
               </div>
             </div>
           </div>
-          <div class="card bg-base-100 w-96 shadow-xl">
+          <div class="card bg-base-100 shadow-xl">
             <div class="w-full p-5 overflow-hidden">
               <img
-              class="w-full h-auto"
+                class="w-full h-auto"
                 src="images/others/latest3.png"
-                alt="" />
+                alt=""
+              />
             </div>
             <div class="card-body pt-2">
               <h2 class="card-title">Ducati XDIAVEL S-73</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
               <div class="card-actions justify-start mt-2">
-                <button class="btn btn-primary bg-transparent border-orange-500 text-orange-500 hover:text-white hover:bg-orange-500 hover:border-orange-500">Read More</button>
+                <button
+                  class="btn btn-primary bg-transparent border-orange-500 text-orange-500 hover:text-white hover:bg-orange-500 hover:border-orange-500"
+                >
+                  Read More
+                </button>
               </div>
             </div>
           </div>
-
         </div>
       </section>
 
       <!-- revew section  -->
 
-      <section class="py-16">
-        <h3 class="heading">Happy <span class="text-orange-500">Clients says</span></h3>
+      <section id="contact" class="py-16">
+        <h3 class="heading">
+          Happy <span class="text-orange-500">Clients says</span>
+        </h3>
 
         <div class="grid mt-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-
           <div class="p-3 border-[1px] border-[#ddd] rounded-xl text-center">
             <div class="">
-              <img class="w-[150px] h-[150px] m-auto" src="images/others/user-1.png" alt="">
-              <p class="mt-5">Slate helps you see how 
-                many more days you need 
-                to work to reach your financial 
-                goal for the month and year.</p>
-                <div class="flex justify-center my-3">
-                  <img class="w-[20px]" src="images/icons/star-solid.svg" alt="">
-                  <img class="w-[20px]" src="images/icons/star-solid.svg" alt="">
-                  <img class="w-[20px]" src="images/icons/star-solid.svg" alt="">
-                  <img class="w-[20px]" src="images/icons/star-solid.svg" alt="">
-                  <img class="w-[20px]" src="images/icons/star-half-stroke-solid.svg" alt="">
-                </div>
-                <h4 class="font-bold text-a">Sabbir Hosen</h4>
-                <p>Banker</p>
+              <img
+                class="w-[150px] h-[150px] m-auto"
+                src="images/others/user-1.png"
+                alt=""
+              />
+              <p class="mt-5">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+              <div class="flex justify-center my-3">
+                <img
+                  class="w-[20px]"
+                  src="images/icons/star-solid.svg"
+                  alt=""
+                />
+                <img
+                  class="w-[20px]"
+                  src="images/icons/star-solid.svg"
+                  alt=""
+                />
+                <img
+                  class="w-[20px]"
+                  src="images/icons/star-solid.svg"
+                  alt=""
+                />
+                <img
+                  class="w-[20px]"
+                  src="images/icons/star-solid.svg"
+                  alt=""
+                />
+                <img
+                  class="w-[20px]"
+                  src="images/icons/star-half-stroke-solid.svg"
+                  alt=""
+                />
+              </div>
+              <h4 class="font-bold text-a">Sabbir Hosen</h4>
+              <p>Banker</p>
             </div>
           </div>
 
           <div class="p-3 border-[1px] border-[#ddd] rounded-xl text-center">
             <div class="">
-              <img class="w-[150px] h-[150px] m-auto" src="images/others/user-2.png" alt="">
-              <p class="mt-5">Slate helps you see how 
-                many more days you need 
-                to work to reach your financial 
-                goal for the month and year.</p>
-                <div class="flex justify-center my-3">
-                  <img class="w-[20px]" src="images/icons/star-solid.svg" alt="">
-                  <img class="w-[20px]" src="images/icons/star-solid.svg" alt="">
-                  <img class="w-[20px]" src="images/icons/star-solid.svg" alt="">
-                  <img class="w-[20px]" src="images/icons/star-solid.svg" alt="">
-                  <img class="w-[20px]" src="images/icons/star-half-stroke-solid.svg" alt="">
-                </div>
-                <h4 class="font-bold text-a">Aslam Hosen</h4>
-                <p>Banker</p>
+              <img
+                class="w-[150px] h-[150px] m-auto"
+                src="images/others/user-2.png"
+                alt=""
+              />
+              <p class="mt-5">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+              <div class="flex justify-center my-3">
+                <img
+                  class="w-[20px]"
+                  src="images/icons/star-solid.svg"
+                  alt=""
+                />
+                <img
+                  class="w-[20px]"
+                  src="images/icons/star-solid.svg"
+                  alt=""
+                />
+                <img
+                  class="w-[20px]"
+                  src="images/icons/star-solid.svg"
+                  alt=""
+                />
+                <img
+                  class="w-[20px]"
+                  src="images/icons/star-solid.svg"
+                  alt=""
+                />
+                <img
+                  class="w-[20px]"
+                  src="images/icons/star-half-stroke-solid.svg"
+                  alt=""
+                />
+              </div>
+              <h4 class="font-bold text-a">Aslam Hosen</h4>
+              <p>Banker</p>
             </div>
           </div>
 
           <div class="p-3 border-[1px] border-[#ddd] rounded-xl text-center">
             <div class="">
-              <img class="w-[150px] h-[150px] m-auto" src="images/others/user-3.png" alt="">
-              <p class="mt-5">Slate helps you see how 
-                many more days you need 
-                to work to reach your financial 
-                goal for the month and year.</p>
-                <div class="flex justify-center my-3">
-                  <img class="w-[20px]" src="images/icons/star-solid.svg" alt="">
-                  <img class="w-[20px]" src="images/icons/star-solid.svg" alt="">
-                  <img class="w-[20px]" src="images/icons/star-solid.svg" alt="">
-                  <img class="w-[20px]" src="images/icons/star-solid.svg" alt="">
-                  <img class="w-[20px]" src="images/icons/star-regular.svg" alt="">
-                </div>
-                <h4 class="font-bold text-a">Nazim</h4>
-                <p>Banker</p>
+              <img
+                class="w-[150px] h-[150px] m-auto"
+                src="images/others/user-3.png"
+                alt=""
+              />
+              <p class="mt-5">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+              <div class="flex justify-center my-3">
+                <img
+                  class="w-[20px]"
+                  src="images/icons/star-solid.svg"
+                  alt=""
+                />
+                <img
+                  class="w-[20px]"
+                  src="images/icons/star-solid.svg"
+                  alt=""
+                />
+                <img
+                  class="w-[20px]"
+                  src="images/icons/star-solid.svg"
+                  alt=""
+                />
+                <img
+                  class="w-[20px]"
+                  src="images/icons/star-solid.svg"
+                  alt=""
+                />
+                <img
+                  class="w-[20px]"
+                  src="images/icons/star-regular.svg"
+                  alt=""
+                />
+              </div>
+              <h4 class="font-bold text-a">Nazim</h4>
+              <p>Banker</p>
             </div>
           </div>
         </div>
@@ -375,46 +470,89 @@
         </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-6">
-          <div class="img">
-            <img class="w-full" src="images/others/faq.png" alt="">
+          <div class="img w-full p-7 flex justify-center items-center">
+            <img class=" m-auto flex flex-col md:flex-row justify-between " src="images/others/faq.png" alt="" />
           </div>
 
           <div class="flex flex-col gap-3">
-            <div class="collapse collapse-arrow bg-base-200 bg-transparent border-[#ddd] border-[1px]">
+            <div
+              class="collapse collapse-arrow bg-base-200 bg-transparent border-[#ddd] border-[1px]"
+            >
               <input type="radio" name="my-accordion-2" checked="checked" />
-              <div class="collapse-title text-xl font-medium">What are the most important things I should
-                know about riding a bike?</div>
+              <div class="collapse-title text-xl font-medium">
+                What are the most important things I should know about riding a
+                bike?
+              </div>
               <div class="collapse-content">
-                <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+                <p>
+                  Safety First! Always obey the rules of the road. Obey all
+                  traffic signals, signs, and laws. Get in the mindset of
+                  “driving” your bike—not just “riding” your bike. This will
+                  help you be a more focused and legally compliant bike rider.
+                </p>
               </div>
             </div>
 
-            <div class="collapse collapse-arrow bg-base-200 bg-transparent border-[#ddd] border-[1px]">
+            <div
+              class="collapse collapse-arrow bg-base-200 bg-transparent border-[#ddd] border-[1px]"
+            >
               <input type="radio" name="my-accordion-2" />
-              <div class="collapse-title text-xl font-medium">How can I tell if my helmet is old and I need a 
-                new one?</div>
+              <div class="collapse-title text-xl font-medium">
+                How can I tell if my helmet is old and I need a new one?
+              </div>
               <div class="collapse-content">
                 <p>hello</p>
               </div>
             </div>
-            <div class="collapse collapse-arrow bg-base-200 bg-transparent border-[#ddd] border-[1px]">
+            <div
+              class="collapse collapse-arrow bg-base-200 bg-transparent border-[#ddd] border-[1px]"
+            >
               <input type="radio" name="my-accordion-2" />
-              <div class="collapse-title text-xl font-medium">My bike has been in storage is it safe to ride?</div>
+              <div class="collapse-title text-xl font-medium ">
+                My bike has been in storage is it safe to ride?
+              </div>
               <div class="collapse-content">
                 <p>hello</p>
               </div>
             </div>
-            <div class="collapse collapse-arrow bg-base-200 bg-transparent border-[#ddd] border-[1px]">
+            <div
+              class="collapse collapse-arrow bg-base-200 bg-transparent border-[#ddd] border-[1px]"
+            >
               <input type="radio" name="my-accordion-2" />
-              <div class="collapse-title text-xl font-medium">What rules should I follow when riding my bike?</div>
+              <div class="collapse-title text-xl font-medium">
+                What rules should I follow when riding my bike?
+              </div>
               <div class="collapse-content">
                 <p>hello</p>
               </div>
             </div>
-
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="py-14 text-white bg-gray-950">
+      <div class="container m-auto flex flex-col md:flex-row justify-between">
+        <div class="left flex gap-5 flex-col">
+          <div class="flex gap-5">
+            <p>Download Now</p>
+            <p>License</p>
+          </div>
+          <ul class="uppercase flex gap-5">
+            <li><a href="#home">about</a></li>
+            <li><a href="#shop">feaatures</a></li>
+            <li><a href="#faq">Careers</a></li>
+            <li><a href="#home">helps</a></li>
+            <li><a href="#home">privacy policy</a></li>
+          </ul>
+          <p>&copy; bike. All rights reserved</p>
+        </div>
+        <div class="right flex flex-col gap-6 justify-self-end">
+          <h3 class="text-2xl font-semibold">Get the App</h3>
+          <img src="images/others/ios.png" alt="" />
+          <img src="images/others/android.png" alt="" />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
