@@ -34,6 +34,13 @@
         },
       };
     </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .heading{
+        @apply  text-center font-semibold text-3xl
+        }
+      }
+    </style>
   </head>
   <body class="font-poppins">
     <header class="container mx-auto">
@@ -82,7 +89,6 @@
       </div>
     </header>
     <main class="container mx-auto">
-
       <div class="carousel w-full">
         <div
           id="slide1"
@@ -213,28 +219,88 @@
         </div>
       </div>
 
-
       <!-- fetured Bikes -->
-      <section class="my-20" >
-          <h2 class="text-center font-semibold text-3xl">Fetured Bikes In This Year</h2>
+      <section class="my-20">
+        <h2 class="text-center font-semibold text-3xl">
+          Fetured Bikes In This Year
+        </h2>
         <div class="sub-heading relative mt-2">
-          <h4 class="text-red-600 font-bold text-center">Best bike collection</h4>
-          <div class="w-[50px] h-[2px] bg-red-600  absolute left-1/2 transform -translate-x-1/2"></div>
+          <h4 class="text-red-600 font-bold text-center">
+            Best bike collection
+          </h4>
+          <div
+            class="w-[50px] h-[2px] bg-red-600 absolute left-1/2 transform -translate-x-1/2"
+          ></div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-5">
-          <div class="w-full p-7"> 
-            <img class="w-full" src="images/others/feature-bike.png" alt="">
+          <div class="w-full p-7">
+            <img class="w-full" src="images/others/feature-bike.png" alt="" />
           </div>
-          <div class="w-full p-7"> 
-            <img class="w-full" src="images/others/feature-bike.png" alt="">
+          <div class="w-full p-7">
+            <img class="w-full" src="images/others/feature-bike.png" alt="" />
           </div>
-          <div class="w-full p-7"> 
-            <img class="w-full" src="images/others/feature-bike.png" alt="">
+          <div class="w-full p-7">
+            <img class="w-full" src="images/others/feature-bike.png" alt="" />
           </div>
         </div>
       </section>
-    </main>
 
+      <!-- latest news  -->
+
+      <section class="py-16">
+        <h2 class="heading">Latest News</h2>
+        
+        <div class="grid mt-9 grid-cols-1 md:grid-cols-2 lg:grid-col-3 gap-10">
+
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="w-full p-5 overflow-hidden">
+              <img
+              class="w-full h-auto"
+                src="images/others/latest1.png"
+                alt="" />
+            </div>
+            <div class="card-body pt-2">
+              <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+              <div class="card-actions justify-start mt-2">
+                <button class="btn btn-primary bg-transparent border-orange-500 text-orange-500 hover:text-white hover:bg-orange-500 hover:border-orange-500">Read More</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="w-full p-5 overflow-hidden">
+              <img
+              class="w-full h-auto"
+                src="images/others/latest2.png"
+                alt="" />
+            </div>
+            <div class="card-body pt-2">
+              <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+              <div class="card-actions justify-start mt-2">
+                <button class="btn btn-primary bg-transparent border-orange-500 text-orange-500 hover:text-white hover:bg-orange-500 hover:border-orange-500">Read More</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="w-full p-5 overflow-hidden">
+              <img
+              class="w-full h-auto"
+                src="images/others/latest3.png"
+                alt="" />
+            </div>
+            <div class="card-body pt-2">
+              <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+              <div class="card-actions justify-start mt-2">
+                <button class="btn btn-primary bg-transparent border-orange-500 text-orange-500 hover:text-white hover:bg-orange-500 hover:border-orange-500">Read More</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
   </body>
 </html>
